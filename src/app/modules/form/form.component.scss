@@ -1,0 +1,21 @@
+.wrapper {
+  text-align: center;
+}
+
+.button {
+  position: absolute;
+}
+h1{
+  text-align: left;
+  color: darkgrey;
+}
+mat-grid-tile{
+  margin-top: 0;
+}
+.mat-card{
+  margin-top: 10px;
+  text-align: center;
+  mat-form-field{
+    width: 250px;
+  }
+}
