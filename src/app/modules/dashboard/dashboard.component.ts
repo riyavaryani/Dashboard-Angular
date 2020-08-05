@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-export interface PeriodicElement {
+export interface dataSelected {
   name: string;
   position: number;
   blogs: number;
   address: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
+const ELEMENT_DATA: dataSelected[] = [
   {position: 1, name: 'Sample Name A', blogs: 1, address: 'XYZ'},
   {position: 2, name: 'Sample Name B', blogs: 4, address: 'XYZ'},
   {position: 3, name: 'Sample Name C', blogs: 6, address: 'XYZ'},
@@ -26,7 +26,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class DashboardComponent implements OnInit {
   displayedColumns: string[] = ['name', 'blogs', 'address', 'position'];
   columnsToDisplay: string[] = this.displayedColumns.slice();
-  data: PeriodicElement[] = ELEMENT_DATA;
+  data: dataSelected[] = ELEMENT_DATA;
 
   addColumn() {
     const randomColumn = Math.floor(Math.random() * this.displayedColumns.length);
